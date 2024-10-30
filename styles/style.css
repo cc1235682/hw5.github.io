@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    width: 300px; /* 容器宽度 */
+    height: 300px; /* 容器高度 */
+}
+
+.image {
+    position: absolute;
+    width: 100px; /* 图片宽度 */
+    height: auto; /* 保持比例 */
+}
+
+/* 设置图片在对角线上排列 */
+.image:nth-child(1) {
+    top: 0; /* 左上角 */
+    left: 0;
+}
+
+.image:nth-child(2) {
+    top: 100px; /* 中间位置 */
+    left: 100px;
+}
+
+.image:nth-child(3) {
+    top: 200px; /* 右下角 */
+    left: 200px;
+}
